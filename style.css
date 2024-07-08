@@ -1,0 +1,379 @@
+:root {
+    --clr-neutral-100: hs1(232, 12%, 13%);
+    --clr-neutral-900: hs1(0 0% 0%);
+
+    --ff-primary: "Inter", sans-serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+    --fs-300: 1rem;
+    --fs-400: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 2rem;
+    --fs-800: 3rem;
+
+    --fs-body: var(--fs-400);
+    --fs-main-heading: var(--fs-800);
+
+}
+
+/*To set up: font sizes, font weights, line heights, font family, colors,
+variables for text on entire website, cursor: pointer;?, any hover effects or focus-visible? shadows at all?*/
+
+a {
+  color: black;
+}
+
+.primary-header {
+  display: grid;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 10px 31px 2rem;
+}
+
+.td-main-title {
+  font-size: var(--fs-main-heading);
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-regular);
+}
+
+.name-with-socials {
+  display: flex;
+  grid-gap: 1.5rem;
+  padding-left: .75rem;
+}
+
+.social-icons {
+  display: flex;
+  grid-gap: .75rem;
+  align-items: center;
+}
+
+/* Homepage-specific CSS */
+
+.projects-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  grid-gap: 1.25rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.project-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 37.5rem;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.project-card-title {
+  position: absolute;
+  display: none;
+
+}
+
+.project-card:hover > .project-card-title {
+  display: block;
+}
+
+.primary-footer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  align-items: top;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.about-skills-services {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.contact {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+/* Project Page-specific CSS */
+
+.project-page {
+  display: grid;
+  grid-template-columns: 480px 800px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-and-summary {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-summary {
+  position: sticky;
+  display: grid;
+  padding: 80px 0px 0 0;
+  justify-items: right;
+}
+
+.project-summary-title {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-700);
+}
+
+.project-summary-desc {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-600);
+  padding-top: .5rem;
+}
+
+.project-summary-prototype-link {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-600);
+  padding-top: .5rem;
+}
+
+.project-tags-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-gap: 2rem;
+  max-width: 80rem;
+  padding-top: 1rem;
+}
+
+.project-summary-tag-title {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-300);
+  text-align:right;
+}
+
+.project-summary-tag {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-300);
+  text-align:right;
+
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: 1;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 60px;
+  overflow: auto;
+}
+
+.project-details-heading {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-600);
+  padding: 2rem 0 0 1rem;
+}
+
+.project-details-body {
+  max-width: 500px;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-300);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+}
+
+@media (max-width: 680px) {
+.primary-header {
+  justify-content: center;
+  padding: none;
+}
+
+.td-main-title {
+  text-align: center;
+}
+
+.name-with-socials {
+  display: grid;
+  justify-content: center;
+}
+
+  .projects-section {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.primary-footer {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.contact {
+  padding-top: 1rem;
+}
+}
+
+@media (max-width: 1200px) {
+  .project-page {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-page {
+    display: grid;
+    grid-template-columns: 1;
+  }
+
+  .project-summary {
+    position: static;
+    justify-items: center;
+  }
+
+  .project-summary-tag-title {
+    text-align: center;
+  }
+  
+  .project-summary-tag {
+    text-align: center;
+  
+  }
+  
+  }
+   /* Need to add left side scrolling positioning here */
+
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility classes */
+
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-italic {
+  font-style: italic;
+}
+
+.fs-main-heading {
+  font-size: var(--fs-main-heading);
+}
+.fs-body {
+  font-size: var(--fs-body);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
