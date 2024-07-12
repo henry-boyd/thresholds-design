@@ -20,17 +20,71 @@
     --fs-body: var(--fs-400);
     --fs-main-heading: var(--fs-800);
 
+    --light: #d8dbe0;
+    --dark: #28292c;
 }
-
-/*To set up: font sizes, font weights, line heights, font family, colors,
-variables for text on entire website, cursor: pointer;?, any hover effects or focus-visible? shadows at all?*/
 
 a {
   color: black;
 }
 
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.dark .contact {color: #fff;}
+
+.dark-mode-button-header {
+  position: relative;
+}
+
+.dark-mode-button-header {
+  position: relative;
+  margin-left: auto;
+  margin-right: 10%;
+  padding-top: 3rem;
+  width: 60px;
+}
+
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
 .primary-header {
   display: grid;
+  grid-template-columns: 480px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -87,7 +141,9 @@ a {
 .project-card-title {
   position: absolute;
   display: none;
-
+  font-size: var(--fs-800);
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-heading);
 }
 
 .project-card:hover > .project-card-title {
@@ -123,15 +179,23 @@ a {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  overflow: visible;
 }
 
-.header-and-summary {
+.primary-header-projects-page {
+  position: sticky;
+  top: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  padding: 2rem 10px 31px 2rem;
 }
 
 .project-summary {
   position: sticky;
+  top: 180px;
   display: grid;
   padding: 80px 0px 0 0;
   justify-items: right;
@@ -189,7 +253,7 @@ a {
   grid-template-columns: 1;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 60px;
+  padding: 14rem 60px 50px 60px;
   overflow: auto;
 }
 
@@ -210,18 +274,26 @@ a {
   padding-top: 1rem;
 }
 
-@media (max-width: 680px) {
-.primary-header {
-  justify-content: center;
+@media (max-width: 800px) {
+  .primary-header {
   padding: none;
+  grid-template-columns: 1fr;
+}
+
+.dark-mode-button-header {
+  position: absolute;
+  top: -1rem;
+  right: 0rem;
 }
 
 .td-main-title {
   text-align: center;
+  padding-top: 3rem;
 }
 
 .name-with-socials {
   display: grid;
+  padding: none;
   justify-content: center;
 }
 
@@ -245,6 +317,11 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .header-and-summary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .project-page {
     display: grid;
     grid-template-columns: 1;
@@ -262,6 +339,10 @@ a {
   .project-summary-tag {
     text-align: center;
   
+  }
+
+  .project-details {
+    padding-top: 50px;
   }
   
   }
@@ -377,3 +458,17 @@ svg {
 .fs-800 {
   font-size: var(--fs-800);
 }
+
+
+/*Dark Mode to Add and Adjust Later
+
+        <div class="dark-mode-button-header">
+                    <div>
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                          <i class="fas fa-moon"></i>
+                          <i class="fas fa-sun"></i>
+                          <span class="ball"></span>
+                        </label>
+                  
+*/
