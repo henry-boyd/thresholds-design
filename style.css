@@ -95,7 +95,6 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   margin-right: auto;
   padding-top: 2rem;
   justify-items: right;
-
 }
 
 .td-main-title {
@@ -131,6 +130,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
+  padding-top: 4.25rem;
 }
 
 .project-card {
@@ -139,6 +139,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   max-width: 37.5rem;
   flex-shrink: 0;
   padding: 1rem;
@@ -168,7 +169,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem;
+  padding: 4.25rem 2rem 8rem 2rem;
 }
 
 .about-skills-services {
@@ -267,7 +268,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   grid-template-columns: 1;
   margin-left: auto;
   margin-right: auto;
-  padding: 14rem 60px 50px 60px;
+  padding: 14rem 60px 8rem 60px;
   overflow: auto;
 }
 
@@ -287,6 +288,10 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   margin-right: auto;
   padding-top: 1rem;
 }
+
+/* Contact Me Page-specific CSS */
+
+
 
 @media (max-width: 1200px) {
   
