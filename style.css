@@ -89,12 +89,12 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
 
 .primary-header {
   display: grid;
-  grid-template-columns: 480px;
+  grid-template-columns: 128px 480px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
-  justify-items: right;
+  justify-items: left;
 }
 
 .td-main-title {
@@ -309,9 +309,12 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
     justify-items: center;
   }
 
+  .td-main-title {
+    text-align: center;
+  }
+
   .name-with-socials {
     justify-items: center;
-    padding-left: none;
   }
 
   .header-and-summary {

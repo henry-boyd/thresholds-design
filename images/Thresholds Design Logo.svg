@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: Copperplate-Light, Copperplate;
+        font-size: 38.02px;
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="128" height="128"/>
+  <line class="cls-3" x1="16" y1="64" x2="112" y2="64"/>
+  <line class="cls-3" x1="64" y1="16" x2="64" y2="112"/>
+  <text class="cls-2" transform="translate(37.23 58.11) scale(.98 1)"><tspan x="0" y="0">T</tspan></text>
+  <text class="cls-2" transform="translate(66.74 89.68) scale(.93 1)"><tspan x="0" y="0">D</tspan></text>
+</svg>
