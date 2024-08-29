@@ -134,7 +134,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
 }
 
 .project-card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   display: flex;
   justify-content: center;
@@ -142,7 +142,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   text-align: center;
   max-width: 37.5rem;
   flex-shrink: 0;
-  padding: 1rem;
+
 }
 
 .project-card:hover {
@@ -197,12 +197,12 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   position: sticky;
   top: 0px;
   display: grid;
-  grid-template-columns: 480px;
+  grid-template-columns: 128px 480px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
-  justify-items: right;
+  justify-items: left;
 
 }
 
