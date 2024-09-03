@@ -35,7 +35,7 @@ li {
 
 body.dark {background-color: #292c35;} /* #9b59b6 */
 
-body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.dark .contact {color: #fff;}
+body.dark h1, body.dark h2, body.dark a, body.dark .about, body.dark .skills-services body.dark .contact {color: #fff;}
 
 .dark-mode-button-header {
   position: relative;
@@ -182,7 +182,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
 
 .primary-footer {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: top;
   max-width: 80rem;
@@ -191,14 +191,17 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   padding: 4.25rem 2rem 8rem 2rem;
 }
 
-.about-skills-services {
+.about {
   width: 320px;
-  flex-shrink: 0;
+}
+
+.skills-services {
+  width: 320px;
+  margin-left: auto;
 }
 
 .contact {
   width: 320px;
-  flex-shrink: 0;
 }
 
 /* Projects List Page */
@@ -380,6 +383,15 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
     justify-content: center;
     padding: 1rem;
   }
+
+  .primary-footer {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .contact {
+    padding-top: 1rem;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -388,7 +400,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .project-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transform: scale(1.2);
@@ -403,7 +415,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
   .primary-header {
     display: grid;
@@ -440,8 +452,8 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .contact {
-    padding-top: 1rem;
+  .skills-services {
+    margin-left: 0;
   }
 
   .project-summary {
