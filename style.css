@@ -416,6 +416,10 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about-skills-services, body.
     justify-items: center;
   }
 
+  .td-main-title {
+    text-align: center;
+  }
+
   .name-with-socials {
     grid-template-columns: 1fr;
     justify-items: center;
