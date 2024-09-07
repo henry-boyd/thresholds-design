@@ -200,6 +200,18 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about, body.dark .skills-ser
   margin-left: auto;
 }
 
+.services-section {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  grid-gap: 5px;
+  align-items: center;}
+
+.tech-stack-icons-section {
+  display: grid;
+  grid-template-columns: repeat(4, 36px);
+  grid-gap: 5px;
+}
+
 .contact {
   width: 320px;
 }
