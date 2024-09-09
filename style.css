@@ -238,7 +238,6 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about, body.dark .skills-ser
 .project-summary-headline {
   display: grid;
   justify-items: right;
-  padding: 5% 0 5% 0;
 }
 
 .project-summary-title {
@@ -269,8 +268,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about, body.dark .skills-ser
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  grid-gap: 2rem;
-  padding-top: 1rem;
+  grid-gap: 1rem;
 }
 
 .project-summary-tag-title {
@@ -356,11 +354,19 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about, body.dark .skills-ser
   .project-summary-headline {
     display: grid;
     justify-items: left;
-  }
+    }
 
   .project-summary-desc {
     text-align: left;
-    max-width: 80%;
+  }
+
+  .project-tags-section {
+    min-width: 50%;
+  }
+
+  .projects-list-image {
+    border-left: none;
+    border-bottom: 1px solid black;
   }
 
   .project-page {
@@ -470,8 +476,13 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about, body.dark .skills-ser
     justify-items: center;
   }
 
+  .project-summary-desc {
+    text-align: center;
+  }
+
   .project-tags-section {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
 
@@ -489,7 +500,13 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about, body.dark .skills-ser
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
+}
 
+@media (max-width: 500px) {
+  .project-tags-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
