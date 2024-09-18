@@ -492,7 +492,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about, body.dark .skills-ser
   
   .project-summary-tag {
     text-align: center;
-  
+
   }
 
   .project-summary-sticky-hidden {
@@ -506,6 +506,7 @@ body.dark h1, body.dark h2, body.dark a, body.dark .about, body.dark .skills-ser
   .project-tags-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 10px;
   }
 }
 

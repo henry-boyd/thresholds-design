@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorations</title>
+    <title>Web Design</title>
     <link rel="icon" type="image/x-icon" href="/images/Thresholds Design Logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,152 +42,151 @@
     <main class="projects-list">
     
         <div class="projects-list-section">
-                <div class="project-summary">
-                    <div class="project-summary-headline">
-                        <h3 class="project-summary-title">Project Title</Title></h3>
-                        <p class="project-summary-desc">Summary of the Project</p>
-                        <p class="project-summary-prototype-link">Link to Prototype</p>
+            <div class="project-summary">
+                <div class="project-summary-headline">
+                    <h3 class="project-summary-title">From the End of the Bar</Title></h3>
+                    <p class="project-summary-desc">Home for my writings on food & drink culture, hospitality, music, and life</p>
+                    <p class="project-summary-prototype-link"><a href="https://www.endofthebar.com/"><u>Link to Website</u></a></p>
+                </div>
+    
+                <div class="project-tags-section">
+                    <div>
+                        <p class="project-summary-tag-title ff-body fw-refular fs-300">Role(s)</p>
+                        <p class="project-summary-tag">Designer</p>
                     </div>
-
-                    <div class="project-tags-section">
-                        <div>
-                            <p class="project-summary-tag-title ff-body fw-refular fs-300">Role</p>
-                            <p class="project-summary-tag">Designer</p>
-                        </div>
-                        <div>
-                            <p class="project-summary-tag-title">Platform(s)</p>
-                            <p class="project-summary-tag">Android, OS</p>
-                        </div>
-                        <div>
-                            <p class="project-summary-tag-title">Areas</p>
-                            <p class="project-summary-tag">Design</p>
-                        </div>
-                        <div>
-                            <p class="project-summary-tag-title">Tech Stack</p>
-                            <p class="project-summary-tag">HTML, CSS,</p>
-                            <p class="project-summary-tag">Javascript</p>
-                        </div>
+                    <div>
+                        <p class="project-summary-tag-title">Platform(s)</p>
+                        <p class="project-summary-tag">Web, Mobile</p>
+                    </div>
+                    <div>
+                        <p class="project-summary-tag-title">Areas</p>
+                        <p class="project-summary-tag">Design, CMS</p>
+                    </div>
+                    <div>
+                        <p class="project-summary-tag-title">Tech Stack</p>
+                        <p class="project-summary-tag">Wordpress,</p>
+                        <p class="project-summary-tag">HTML, CSS</p>
                     </div>
                 </div>
-
+            </div>
+    
             <div class="projects-list-image">
-                <div class="project-details-image">
-                    <img src="images/600x400 image.jpg" alt="Main Project Image">
-                </div>
+                <a href="https://www.endofthebar.com/"><img src="images/End of the Bar Hompage Screenshot.png" alt="Main Project Image"></a>
             </div>
         </div>
 
         <div class="projects-list-section">
             <div class="project-summary">
                 <div class="project-summary-headline">
-                    <h3 class="project-summary-title">Project Title</Title></h3>
-                    <p class="project-summary-desc">Summary of the Project</p>
-                    <p class="project-summary-prototype-link">Link to Prototype</p>
+                    <h3 class="project-summary-title">Rest & Be Thankful</Title></h3>
+                    <p class="project-summary-desc">Home for my writings on food & drink culture, hospitality, music, and life</p>
+                    <p class="project-summary-prototype-link"><a href="https://www.endofthebar.com/"><u>Link to Website</u></a></p>
                 </div>
 
                 <div class="project-tags-section">
                     <div>
-                        <p class="project-summary-tag-title ff-body fw-refular fs-300">Role</p>
+                        <p class="project-summary-tag-title ff-body fw-refular fs-300">Role(s)</p>
                         <p class="project-summary-tag">Designer</p>
                     </div>
                     <div>
                         <p class="project-summary-tag-title">Platform(s)</p>
-                        <p class="project-summary-tag">Android, OS</p>
+                        <p class="project-summary-tag">Web, Mobile</p>
                     </div>
                     <div>
                         <p class="project-summary-tag-title">Areas</p>
-                        <p class="project-summary-tag">Design</p>
+                        <p class="project-summary-tag">Design, CMS</p>
                     </div>
                     <div>
                         <p class="project-summary-tag-title">Tech Stack</p>
-                        <p class="project-summary-tag">HTML, CSS,</p>
-                        <p class="project-summary-tag">Javascript</p>
+                        <p class="project-summary-tag">Wordpress,</p>
+                        <p class="project-summary-tag">HTML, CSS</p>
                     </div>
                 </div>
             </div>
 
-        <div class="projects-list-image">
-            <div class="project-details-image">
-                <img src="images/600x400 image.jpg" alt="Main Project Image">
+            <div class="projects-list-image">
+                <a href="https://www.endofthebar.com/"><img src="images/End of the Bar Hompage Screenshot.png" alt="Main Project Image"></a>
             </div>
         </div>
-    </div>
         
-    <div class="projects-list-section">
-        <div class="project-summary">
-            <div class="project-summary-headline">
-                <h3 class="project-summary-title">Project Title</Title></h3>
-                <p class="project-summary-desc">Summary of the Project</p>
-                <p class="project-summary-prototype-link">Link to Prototype</p>
-            </div>
+        <div class="projects-list-section">
+            <div class="project-summary">
+                <div class="project-summary-headline">
+                    <h3 class="project-summary-title">From the End of the Bar</Title></h3>
+                    <p class="project-summary-desc">Home for my writings on food & drink culture, hospitality, music, and life</p>
+                    <p class="project-summary-prototype-link"><a href="https://www.endofthebar.com/"><u>Link to Website</u></a></p>
+                </div>
 
-            <div class="project-tags-section">
-                <div>
-                    <p class="project-summary-tag-title ff-body fw-refular fs-300">Role</p>
-                    <p class="project-summary-tag">Designer</p>
+                <div class="project-tags-section">
+                    <div>
+                        <p class="project-summary-tag-title ff-body fw-refular fs-300">Role(s)</p>
+                        <p class="project-summary-tag">Designer</p>
+                    </div>
+                    <div>
+                        <p class="project-summary-tag-title">Platform(s)</p>
+                        <p class="project-summary-tag">Web<br>Mobile</p>
+                    </div>
+                    <div>
+                        <p class="project-summary-tag-title">Areas</p>
+                        <p class="project-summary-tag">Web Design<br>Responsive</p>
+                    </div>
+                    <div>
+                        <p class="project-summary-tag-title">Tech Stack</p>
+                        <p class="project-summary-tag">Wordpress</p>
+                        <p class="project-summary-tag">HTML/CSS</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="project-summary-tag-title">Platform(s)</p>
-                    <p class="project-summary-tag">Android, OS</p>
-                </div>
-                <div>
-                    <p class="project-summary-tag-title">Areas</p>
-                    <p class="project-summary-tag">Design</p>
-                </div>
-                <div>
-                    <p class="project-summary-tag-title">Tech Stack</p>
-                    <p class="project-summary-tag">HTML, CSS,</p>
-                    <p class="project-summary-tag">Javascript</p>
-                </div>
+            </div>
+            <div class="projects-list-image"></div>
+                <a href="https://www.endofthebar.com/"><img src="images/End of the Bar Hompage Screenshot.png" alt="Main Project Image"></a>
             </div>
         </div>
 
-    <div class="projects-list-image">
-        <div class="project-details-image">
-            <img src="images/600x400 image.jpg" alt="Main Project Image">
+        <div class="projects-list-section">
+            <div class="project-summary">
+                <div class="project-summary-headline">
+                    <h3 class="project-summary-title">Tech & Consequence</Title></h3>
+                    <p class="project-summary-desc">Minimalist blog focused on the impact of technology on modern society</p>
+                    <p class="project-summary-prototype-link"><a href="https://www.techandconsequence.com/"><u>Link to Website</u></a></p>
+                </div>
+
+                <div class="project-tags-section">
+                    <div>
+                        <p class="project-summary-tag-title ff-body fw-refular fs-300">Role(s)</p>
+                        <p class="project-summary-tag">Designer</p>
+                    </div>
+                    <div>
+                        <p class="project-summary-tag-title">Platform(s)</p>
+                        <p class="project-summary-tag">Web<br>Mobile</p>
+                    </div>
+                    <div>
+                        <p class="project-summary-tag-title">Skills</p>
+                        <p class="project-summary-tag">Web Design<br>Responsive</p>
+                    </div>
+                    <div>
+                        <p class="project-summary-tag-title">Tech Stack</p>
+                        <p class="project-summary-tag">Wordpress</p>
+                        <p class="project-summary-tag">HTML/CSS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-list-image">
+                <a href="https://www.techandconsequence.com/"><img src="images/tech_and_consequence_homepage.png" alt="Main Project Image"></a>
+            </div>
         </div>
-    </div>
-</div>
-
-<div class="projects-list-section">
-    <div class="project-summary">
-        <div class="project-summary-headline">
-            <h3 class="project-summary-title">Project Title</Title></h3>
-            <p class="project-summary-desc">Summary of the Project</p>
-            <p class="project-summary-prototype-link">Link to Prototype</p>
-        </div>
-
-        <div class="project-tags-section">
-            <div>
-                <p class="project-summary-tag-title ff-body fw-refular fs-300">Role</p>
-                <p class="project-summary-tag">Designer</p>
-            </div>
-            <div>
-                <p class="project-summary-tag-title">Platform(s)</p>
-                <p class="project-summary-tag">Android, OS</p>
-            </div>
-            <div>
-                <p class="project-summary-tag-title">Areas</p>
-                <p class="project-summary-tag">Design</p>
-            </div>
-            <div>
-                <p class="project-summary-tag-title">Tech Stack</p>
-                <p class="project-summary-tag">HTML, CSS,</p>
-                <p class="project-summary-tag">Javascript</p>
-            </div>
-        </div>
-    </div>
-
-<div class="projects-list-image">
-    <div class="project-details-image">
-        <img src="images/600x400 image.jpg" alt="Main Project Image">
-    </div>
-</div>
-</div>
-
-
-   
     </main>
+
+<div style="display: grid; justify-items: center; padding-bottom: 8rem;">
+    <p class="ff-body fs-300 fw-regular">Designed & Developed by Henry Boyd</p>
+    <ul class="social-icons" style="padding-top: 1rem" role="list" aria-label="Contact Options">
+        <li><a aria-label="Email" href="mailto:henry@thresholds.design"> <img src="images/envelope.svg" alt="Envelope Icon"> </a></li>
+        <li><a aria-label="Linkedin (Opens in a new tab)" href="https://www.linkedin.com/in/henryboyd/"> <img src="images/LinkedIn icon.svg" alt="LinkedIn Icon"> </a></li>
+        <li><a aria-label="Github (Opens in a new tab)" href="https://github.com/henrygboyd"> <img src="images/Github Icon.svg" alt="Github Icon"> </a></li>
+        <li><a aria-label="Instagram (Opens in a new tab)" href="https://www.instagram.com/thresholds.design/"> <img src="images/Insta Icon.svg" alt="Instagram Icon"> </a></li>
+        <li><a aria-label="Tiktok (Opens in a new tab)" href="https://www.tiktok.com/@thresholds.design"> <img src="images/TikTok Icon.svg" alt="TikTok Icon"> </a></li>
+    </ul>
+</div>
 
 </body>
 </html>
