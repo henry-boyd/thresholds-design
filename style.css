@@ -480,6 +480,10 @@ li {
       gap: 2rem;
   }
 
+  .skills-services-section {
+    padding: 2rem 0;
+  }
+
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
