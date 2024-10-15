@@ -430,6 +430,10 @@ li {
   .project-summary-sticky-hidden {
     display: none;
   }
+
+  .project-card-summary {
+    width: 400px;
+  }
 }
 
 @media (max-width: 900px) {
