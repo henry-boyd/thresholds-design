@@ -33,17 +33,25 @@ li {
   font-weight: var(--fw-regular);
 }
 
+@view-transition {
+  navigation: auto;
+}
 
 /* Header */
 
 .primary-header {
-  display: flex;
-  grid-template-columns: 1fr 1fr;
-  max-width: 1280px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2rem;
+  padding: 2rem 0;
   justify-content: center;
+}
+
+.header-logo-title {
+  display: flex;
+  align-items: center;
 }
 
 .td-main-title {
@@ -57,7 +65,24 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: right;
-  grid-gap: 1rem;
+  font-style: italic;
+  font-weight: var(--fw-regular); 
+  font-size:  var(--fs-600);
+}
+
+.hidden-socials-column {
+  display: none;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socials-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: right;
+  margin-left: auto;
 }
 
 .social-icons {
@@ -78,6 +103,17 @@ li {
   font-size: var(--fs-400);
   padding: 1rem 0;
 
+}
+
+/*Statement*/
+
+.statement {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  padding: 2rem 0;
+  text-wrap: balance;
+  font-size: var(--fs-800);
 }
 
 /* Homepage Projects Section */
@@ -157,30 +193,14 @@ li {
   padding-top: .5rem;
 }
 
-.project-card-summary-link {
+.project-card-summary-links {
   font-family: var(--ff-body);
   font-weight: var(--fw-regular);
   font-size: var(--fs-600);
-}
-
-.project-card-summary-icons {
   padding-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.project-card-tags-section {
-  display: flex;
-  grid-gap: 3rem;
-}
-
-.project-card-summary-tag-title {
-  color: rgba(0, 0, 0, 0.50);
-  font-family: var(--ff-body);
-  font-weight: var(--fw-regular);
-  font-size: var(--fs-300);
-  text-align:left;
 }
 
 .project-card-summary-tag {
@@ -213,22 +233,19 @@ li {
   padding-top: .5rem;
 }
 
-.project-card-summary-link-flip {
+.project-card-summary-links-flip {
   text-align: right;
   font-family: var(--ff-body);
   font-weight: var(--fw-regular);
   font-size: var(--fs-600);
-}
-
-.project-card-summary-icons-flip {
-  justify-content: right;
-  padding-bottom: 1rem;
   display: flex;
+  justify-content: right;
   align-items: center;
+  padding-bottom: 1rem;
   gap: 1rem;
 }
 
-.project-card-summary-tag-title-flip {
+.project-card-summary-tag-title {
   color: rgba(0, 0, 0, 0.50);
   font-family: var(--ff-body);
   font-weight: var(--fw-regular);
@@ -236,12 +253,21 @@ li {
   text-align:right;
 }
 
-.project-card-summary-tag-flip {
-  font-family: var(--ff-body);
-  font-weight: var(--fw-regular);
-  font-size: var(--fs-300);
-  text-align: right;
+.project-icons-square {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5rem;
+  margin-left: auto;
+}
 
+.project-card-image-flip {
+  display: flex;
+  position: relative;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 400px;
 }
 
 
@@ -263,9 +289,10 @@ li {
   width: 100%;
   min-width: 320px;
   border-top: solid grey 1px;
+  border-bottom: solid grey 1px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .skills-services-cards {
@@ -273,13 +300,13 @@ li {
   gap: .5rem;
   padding: 1rem 0rem;
   align-items: center;
+  justify-content: center;
 }
 
 .about-contact-info {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  border-top: solid grey 1px;
   padding: 2rem 0 2rem 0;
 }
 
@@ -291,12 +318,19 @@ li {
   width: 320px;
 }
 
+/* Contact Form */
+
+.contact-form {
+  position: sticky;
+
+}
+
 /* Project Page */
 
 .project-page {
   display: grid;
   max-width: 80rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   align-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -312,21 +346,25 @@ li {
   justify-items: right;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  padding-right: 1rem;
 }
 
-.project-card-tags-section-flip {
-  display: flex;
-  gap: 3rem;
+.project-card-tags-section {
+  display: grid;
+  gap: 1rem;
   justify-content: right;
-  padding-top: 1rem;
+}
+
+.project-card-tags-section-row {
+  display: flex;
+  grid-gap: .5rem;
+  align-items: center;
 }
 
 .project-details-column {
   display: grid;
   justify-items: center;
   width: 100%;
-  padding-bottom: 2rem;
   overflow: auto;
 }
 
@@ -351,6 +389,10 @@ li {
 
 @media (max-width: 1100px) {
 
+  .primary-header {
+    max-width: 45rem;
+  }
+
   .project-card {
     display: grid;
   }
@@ -369,6 +411,11 @@ li {
     margin-right: auto;
   }
 
+  .project-card-summary-links {
+    display: flex;
+    justify-content: center;
+  }
+
   .project-card-summary-icons {
     display: flex;
     justify-content: center;
@@ -384,7 +431,7 @@ li {
     margin-right: auto;
   }
 
-  .project-card-summary-icons-flip {
+  .project-card-summary-links-flip {
     display: flex;
     justify-content: center;
   }
@@ -411,17 +458,19 @@ li {
     padding: 1rem;
   }
 
-  .project-card-tags-section-flip {
+  .project-card-tags-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 1rem;
   }
 
-  .project-card-summary-tag-title-flip {
+  .project-card-tags-section-row {
+    display: grid;
+    align-items: normal;
+  }
+
+  .project-card-summary-tag-title {
     text-align:center;
-  }
-
-  .project-card-summary-tag-flip {
-    text-align: center;
   }
 
 }
@@ -437,6 +486,20 @@ li {
 }
 
 @media (max-width: 900px) {
+  .primary-header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .hidden-socials-column {
+    display: flex;
+  }
+
+  .socials-column {
+    display: none;
+  }
+  
   .skills-services-section {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -457,9 +520,9 @@ li {
 
 @media (max-width: 650px) {
 
-  .primary-header {
+  .header-logo-title {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     justify-items: center;
   }
 
@@ -477,7 +540,7 @@ li {
     justify-items: center;
   }
 
-  .project-card-tags-section-flip {
+  .project-card-tags-section {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       padding-top: 10px;
