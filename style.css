@@ -64,7 +64,7 @@ body {
 .primary-header {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  max-width: 80rem;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem 2rem;
@@ -130,7 +130,7 @@ body {
   display: flex;
   justify-content: center;
   grid-gap: 1.25rem;
-  max-width: 80rem;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--ff-body);
@@ -144,8 +144,8 @@ body {
 .statement-section {
   margin-left: auto;
   margin-right: auto;
-  max-width: 80rem;
-  padding: 4rem 4rem;
+  max-width: 70rem;
+  padding: 2rem 2rem;
 }
 
 .statement {
@@ -158,13 +158,13 @@ body {
 /* Homepage Projects Section */
 
 .projects-section {
-  max-width: 80rem;
+  max-width: 70rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.25rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem 4rem;
 }
 
 .project-card {
@@ -299,10 +299,10 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
-  max-width: 80rem;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 0rem;
 }
 
 .skills-services-section {
@@ -341,11 +341,6 @@ body {
 
 /* Contact Form */
 
-.contact-form {
-  position: sticky;
-
-}
-
 /* Project Page */
 
 .project-page {
@@ -356,18 +351,20 @@ body {
   margin-left: auto;
   margin-right: auto;
   overflow: visible;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 1rem;
 }
 
 .project-summary-sticky {
   position: sticky;
-  top: 250px;
+  top: 100px;
   display: grid;
   align-content: center;
   justify-items: right;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 1rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  border: 1px solid black;
 }
 
 .project-card-tags-section {
@@ -391,7 +388,7 @@ body {
 
 .project-details-heading {
   font-family: var(--ff-heading);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-bold);
   padding: 2rem 0 0 4rem;
 }
 
@@ -406,7 +403,7 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
 
   .primary-header {
     max-width: 50rem;
@@ -478,14 +475,20 @@ body {
   }
 
   .project-card-tags-section {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: space-evenly;
     padding-top: 1rem;
   }
 
+  .project-icons-square {
+    display: flex;
+    margin-left: auto;
+  }
+
   .project-card-tags-section-row {
-    display: grid;
-    align-items: normal;
+    display: flex;
+    grid-gap: 20px;
   }
 
   .project-card-summary-tag-title {
@@ -494,7 +497,7 @@ body {
 
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
   .project-summary-sticky-hidden {
     display: none;
   }
@@ -541,6 +544,12 @@ body {
   }
 }
 
+@media (max-width: 750px) {
+  .statement {
+    font-size: 6vw;
+  }
+}
+
 @media (max-width: 650px) {
 
   .header-logo-title {
@@ -559,16 +568,24 @@ body {
     padding-left: 0;
   }
 
+  .statement {
+    font-size: 5vw;
+  }
+
+  .statement-section {
+    padding: 2rem 2rem;
+  }
+
   .projects-section {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
 
   .project-card-tags-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding-top: 10px;
+      margin-top: 10px;
+      padding: 1rem;
       gap: 2rem;
+      border: 1px solid grey;
   }
 
   .skills-services-section {
