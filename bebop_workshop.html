@@ -16,6 +16,24 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <script>
+        window.onload = videoHover;
+
+        function videoHover() {
+            let video2 = document.getElementById("homepage-video-2")
+            let hover2 = document.getElementById("hover-video-2")
+            
+            hover2.addEventListener("mouseover", function() {
+                video2.play();
+            });
+
+            hover2.addEventListener("mouseleave", function() {
+                video2.pause();
+            });
+        }
+
+    </script>
 </head>
 <body>
     <header class="primary-header">
@@ -49,6 +67,7 @@
             <li style="padding: .25rem;"><a href="https://github.com/henry-boyd"> <img src="images/GithubIcon.svg" alt="Github Icon"> </a></li>
             <li style="padding: .25rem;"><a href="https://www.instagram.com/thresholds.design/"> <img src="images/Insta Icon.svg" alt="Instagram Icon"> </a></li>
         </ul>
+        
     </header>
    
     <div class ="header-navigation">
@@ -56,113 +75,119 @@
     </div>
 
     <main class="project-page">
-        <div class="project-summary-column">        
-            <div class="project-summary-sticky">
-                <div class="project-card-summary-headline-flip">
-                    <a href="interval_training_timer_app.html" class="project-card-summary-title-flip"><h3>Bebop Workshop</Title></h3></a>
-                    <p class="project-card-summary-desc-flip">Front-end dev project & home<br>for my physical design, software,<br>and restoration work</p>
-                </div>
-
-                <div class="project-card-summary-links-flip">
-                    <p class="project-card-summary-link-flip"><a href="https://www.bebopworkshop.com/"><u>Link to Website</u></a></p>
-                    <p class="project-card-summary-link-flip"><a href="https://github.com/henry-boyd/Bebop-Workshop-Website"><u>Github Repo</u></a></p>
-                </div>
-
-                <div class="project-card-tags-section">
-                    <div class="project-card-tags-section-row">
-                        <p class="project-card-summary-tag-title ff-body fw-refular fs-300">Role:</p>
-                        <p>Designer, Developer</p>
-                    </div>
-
-                    <div class="project-card-tags-section-row">
-                        <p class="project-card-summary-tag-title">Dev Stack:</p>
-                        <div class="project-icons-square">
-                            <img src="images/skills_and_services_icons/html5.svg" style="height: 36px; width: 36px;">
-                            <img src="images/CSSlogo.png" style="height: 36px; width: 36px;">
-                            <img src="images/skills_and_services_icons/javascript.svg" style="height: 36px; width: 36px;">
-                            <img src="images/Astro Icon Light Gradient.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
-                            <img src="images/SVG_Logo.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
-                        </div>
-                    </div>
-                    
-                    <div class="project-card-tags-section-row">
-                        <p class="project-card-summary-tag-title">Tech Stack:</p>
-                        <div class="project-icons-square">
-                            <img src="images/skills_and_services_icons/figma.svg" style="height: 36px; width: 36px;">
-                            <img src="images/skills_and_services_icons/github.svg" style="height: 36px; width: 36px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
         <div class="project-details-column">
-        <div class="project-details">
-            <div class="project-details-image">
-                <img src="images/600x400 image.jpg" alt="Main Project Image">
+
+            <div class="project-details-image-section">
+                <div class="project-details-image">
+                    <a href="bebop_workshop.html"><img src="/portfoliomedia/BebopHomepagescreenshot.png" style="width: 800px;" alt="Main Project Image"></a>
+                    </div>
+                <div class="project-image-section-hidden">
+                    <div class="project-summary-header">
+                        <div class="project-summary-heading">
+                            <a href="interval_training_timer_app.html" class="project-card-summary-title"><h3>Bebop Workshop</Title></h3></a>
+            
+                            <div class="project-card-summary-links">
+                                <p class="project-card-summary-link"><a href="https://www.bebopworkshop.com/"><u>Visit Website</u></a></p>
+                                <p class="project-card-summary-link"><a href="https://github.com/henry-boyd/Bebop-Workshop-Website"><u>Github Repo</u></a></p>
+                            </div>
+            
+                            <div class="project-card-tags-section-row">
+                                <p class="project-card-summary-tag-title ff-body fw-refular fs-300">Role:</p>
+                                <p>Designer, Developer</p>
+                            </div>
+                        </div>
+        
+                        <div class="project-card-tags-section">
+                                <div class="project-icons-square">
+                                    <img src="images/skills_and_services_icons/html5.svg" style="height: 36px; width: 36px;">
+                                    <img src="images/CSSlogo.png" style="height: 36px; width: 36px;">
+                                    <img src="images/skills_and_services_icons/javascript.svg" style="height: 36px; width: 36px;">
+                                    <img src="images/Astro Icon Light Gradient.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
+                                    <img src="images/SVG_Logo.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
+                                    <img src="images/skills_and_services_icons/figma.svg" style="height: 36px; width: 36px;">
+                                </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="collapsible">Goals</button>
+                    <div class="content">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="project-summary-sticky-hidden">
-                <div class="project-card-summary-headline-flip">
-                    <a href="interval_training_timer_app.html" class="project-card-summary-title-flip"><h3>Bebop Workshop</Title></h3></a>
-                    <p class="project-card-summary-desc-flip">Front-end dev project & home<br>for my physical designs, software,<br>and restoration work</p>
+            <div class="project-details-image-section">
+                <div class="project-details-image">
+                    <a href="bebop_workshop.html" style="overflow: hidden;"> <video autoplay src="portfoliomedia/BebopWorkshopHomepageVideo.mov" width="100%" height="auto"></a>
                 </div>
 
-                <div class="project-card-summary-links-flip">
-                    <p class="project-card-summary-link-flip"><a href="https://www.bebopworkshop.com/"><u>Link to Website</u></a></p>
-                    <p class="project-card-summary-link-flip"><a href="https://github.com/henry-boyd/Bebop-Workshop-Website"><u>Github Repo</u></a></p>
+            </div>
+
+            <div class="project-details-image-section">
+                <div class="project-details-image">
+                    <img src="images/600x400 image.jpg" style="width: 800px;" alt="Main Project Image">
+                </div>            </div>
+
+            <div class="project-details-image-section">
+                <div class="project-details-image">
+                    <img src="images/600x400 image.jpg" style="width: 800px;" alt="Main Project Image">
+                </div>
+            </div>
+    </div>
+
+    <div class="project-summary-column">        
+        <div class="project-summary-sticky">
+            <div class="project-summary-header">
+                <div class="project-summary-heading">
+                <a href="interval_training_timer_app.html" class="project-card-summary-title"><h3>Bebop Workshop</Title></h3></a>
+
+                <div class="project-card-summary-links">
+                    <p class="project-card-summary-link"><a href="https://www.bebopworkshop.com/"><u>Visit Website</u></a></p>
+                    <p class="project-card-summary-link"><a href="https://github.com/henry-boyd/Bebop-Workshop-Website"><u>Github Repo</u></a></p>
+                </div>
+
+                <div class="project-card-tags-section-row">
+                    <p class="project-card-summary-tag-title ff-body fw-refular fs-300">Role:</p>
+                    <p>Designer, Developer</p>
+                </div>
                 </div>
 
                 <div class="project-card-tags-section">
-                    <div class="project-card-tags-section-row">
-                        <p class="project-card-summary-tag-title ff-body fw-refular fs-300">Role:</p>
-                        <p style="text-align: center; margin-left: auto;">Designer, Developer</p>
-                    </div>
-
-                    <div class="project-card-tags-section-row">
-                        <p class="project-card-summary-tag-title">Dev Stack:</p>
                         <div class="project-icons-square">
                             <img src="images/skills_and_services_icons/html5.svg" style="height: 36px; width: 36px;">
                             <img src="images/CSSlogo.png" style="height: 36px; width: 36px;">
                             <img src="images/skills_and_services_icons/javascript.svg" style="height: 36px; width: 36px;">
                             <img src="images/Astro Icon Light Gradient.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
-                            <img src="images/SVG_Logo.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
-                        </div>
-                    </div>
-
-                    <div class="project-card-tags-section-row">
-                        <p class="project-card-summary-tag-title">Tech Stack:</p>
-                        <div class="project-icons-square">
+                            <img src="images/skills_and_services_icons/SVG_Logo.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
                             <img src="images/skills_and_services_icons/figma.svg" style="height: 36px; width: 36px;">
-                            <img src="images/skills_and_services_icons/github.svg" style="height: 36px; width: 36px;">
                         </div>
-                    </div>
                 </div>
             </div>
-            <div class="project-details-section">
-                <h4 class="project-details-heading">Background</h4>
-                <p class="project-details-body">This project was started in order to xyz and because we needed an app that would abc instead of def.</p>
-            </div>
-            <div class="project-details-section">
-                <h4 class="project-details-heading">Goals</h4>
-                <p class="project-details-body">This project was started in order to xyz and because we needed an app that would abc instead of def.</p>
-            </div>
-            <div class="project-details-section">
-                <h4 class="project-details-heading">Constraints</h4>
-                <p class="project-details-body">This project was started in order to xyz and because we needed an app that would abc instead of def.</p>
-            </div>
-            <div class="project-details-section">
-                <h4 class="project-details-heading">Approach</h4>
-                <p class="project-details-body">This project was started in order to xyz and because we needed an app that would abc instead of def.</p>
-            </div>
-            <div class="project-details-section">
-                <h4 class="project-details-heading">Outcome</h4>
-                <p class="project-details-body">This project was started in order to xyz and because we needed an app that would abc instead of def.</p>
-            </div>
-            <div class="project-details-section">
-                <h4 class="project-details-heading">Filler</h4>
-                <p class="project-details-body">This project was started in order to xyz and because we needed an app that would abc instead of def.</p>
-                <p class="project-details-body">This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.This project was started in order to xyz and because we needed an app that would abc instead of def.</p>
+            <div class="project-details">
+                <button type="button" class="collapsible">Goals</button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button type="button" class="collapsible">Constraints</button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button type="button" class="collapsible">Approach</button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button type="button" class="collapsible">Outcome</button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button type="button" class="collapsible">Next Steps</button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
             </div>
         </div>
     </div>
@@ -173,11 +198,11 @@
             <div class="about">
                 <h3>About</h3>
                 <br>
-                <p>Thresholds Design is a studio focused on designing products & software
-                     at the intersection of not only the digital and the physical but of art and science. To create
+                <p>Thresholds Design is focused on designing products & software
+                     for the intersection of not only the digital and the physical but of art and science. We strive to create
                       meaningful work, using current and frontier technologies, that improves everyday life. </p>
                 <br>
-                <p><a href="https://www.henry-boyd.com/"><u> Henry Boyd</u></a> is a designer/developer, writer, and general tinkerer currently based in Colorado.</p>
+                <p><a href="https://www.henry-boyd.com/"><u> Henry Boyd</u></a> is a designer/developer, writer, and <a href="https://www.bebopworkshop.com/"><u>general tinkerer</u></a> currently based in Colorado.</p>
             </div>
 
             <div class="contact">
@@ -227,10 +252,25 @@
             <li><a href="https://www.linkedin.com/in/henryboyd/"> <img src="images/LinkedIn icon.svg" alt="LinkedIn Icon"> </a></li>
             <li><a href="https://github.com/henry-boyd"> <img src="images/GithubIcon.svg" alt="Github Icon"> </a></li>
             <li><a href="https://www.instagram.com/thresholds.design/"> <img src="images/Insta Icon.svg" alt="Instagram Icon"> </a></li>
-            <li><a href="https://www.tiktok.com/@thresholds.design"> <img src="images/TikTok Icon.svg" alt="TikTok Icon"> </a></li>
         </ul>
     </div>
     </footer>
 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
 </body>
 </html>
