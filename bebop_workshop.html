@@ -16,24 +16,6 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
-    <script>
-        window.onload = videoHover;
-
-        function videoHover() {
-            let video2 = document.getElementById("homepage-video-2")
-            let hover2 = document.getElementById("hover-video-2")
-            
-            hover2.addEventListener("mouseover", function() {
-                video2.play();
-            });
-
-            hover2.addEventListener("mouseleave", function() {
-                video2.pause();
-            });
-        }
-
-    </script>
 </head>
 <body>
     <header class="primary-header">
@@ -80,40 +62,54 @@
             <div class="project-details-image-section">
                 <div class="project-details-image">
                     <a href="bebop_workshop.html"><img src="/portfoliomedia/BebopHomepagescreenshot.png" style="width: 800px;" alt="Main Project Image"></a>
-                    </div>
+                </div>
+                
                 <div class="project-image-section-hidden">
                     <div class="project-summary-header">
-                        <div class="project-summary-heading">
-                            <a href="interval_training_timer_app.html" class="project-card-summary-title"><h3>Bebop Workshop</Title></h3></a>
-            
-                            <div class="project-card-summary-links">
-                                <p class="project-card-summary-link"><a href="https://www.bebopworkshop.com/"><u>Visit Website</u></a></p>
-                                <p class="project-card-summary-link"><a href="https://github.com/henry-boyd/Bebop-Workshop-Website"><u>Github Repo</u></a></p>
-                            </div>
-            
-                            <div class="project-card-tags-section-row">
-                                <p class="project-card-summary-tag-title ff-body fw-refular fs-300">Role:</p>
-                                <p>Designer, Developer</p>
-                            </div>
+                        <a href="interval_training_timer_app.html" class="project-card-summary-title"><h2>Bebop Workshop</Title></h2></a>
+        
+                        <div class="project-summary-info">
+        
+                        <div>
+                        <div class="project-card-summary-links">
+                            <p class="project-card-summary-link"><a href="https://www.bebopworkshop.com/"><u>Visit Website</u></a></p>
+                            <p class="project-card-summary-link"><a href="https://github.com/henry-boyd/Bebop-Workshop-Website"><u>Github Repo</u></a></p>
+                        </div>
+        
+                        <div class="project-card-tags-section-row">
+                            <p class="project-card-summary-tag-title ff-body fw-refular fs-300">Role:</p>
+                            <p>Designer, Developer</p>
+                        </div>
                         </div>
         
                         <div class="project-card-tags-section">
-                                <div class="project-icons-square">
-                                    <img src="images/skills_and_services_icons/html5.svg" style="height: 36px; width: 36px;">
-                                    <img src="images/CSSlogo.png" style="height: 36px; width: 36px;">
-                                    <img src="images/skills_and_services_icons/javascript.svg" style="height: 36px; width: 36px;">
-                                    <img src="images/Astro Icon Light Gradient.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
-                                    <img src="images/SVG_Logo.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
-                                    <img src="images/skills_and_services_icons/figma.svg" style="height: 36px; width: 36px;">
-                                </div>
+                            <div class="project-icons-square">
+                                <img src="images/skills_and_services_icons/html5.svg" style="height: 36px; width: 36px;">
+                                <img src="images/CSSlogo.png" style="height: 36px; width: 36px;">
+                                <img src="images/skills_and_services_icons/javascript.svg" style="height: 36px; width: 36px;">
+                                <img src="images/Astro Icon Light Gradient.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
+                                <img src="images/skills_and_services_icons/SVG_Logo.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
+                                <img src="images/skills_and_services_icons/figma.svg" style="height: 36px; width: 36px;">
+                            </div>
                         </div>
-                    </div>
-
-                    <button type="button" class="collapsible">Goals</button>
-                    <div class="content">
-                        <p>Lorem ipsum...</p>
+                        
+                        </div>
+        
                     </div>
                 </div>
+
+                <div class="project-details-button">
+                <button type="button" class="collapsible">
+                    <h3 class="button-title">Goals</h3>
+                    <p>In a few words, I needed someplace to keep my stuff!</p>
+                    <img src="/images/ExpandIcon.svg" class="expand-icon">
+                    <img src="/images/CollapseIcon.svg" class="collapse-icon">
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
+                </div>
+
             </div>
 
             <div class="project-details-image-section">
@@ -121,16 +117,70 @@
                     <a href="bebop_workshop.html" style="overflow: hidden;"> <video autoplay src="portfoliomedia/BebopWorkshopHomepageVideo.mov" width="100%" height="auto"></a>
                 </div>
 
+                <div class="project-details-button">
+                <button type="button" class="collapsible">
+                    <h3 class="button-title">Constraints</h3>
+                    <img src="/images/ExpandIcon.svg" class="expand-icon">
+                    <img src="/images/CollapseIcon.svg" class="collapse-icon">
+                
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
+                </div>
             </div>
 
             <div class="project-details-image-section">
                 <div class="project-details-image">
                     <img src="images/600x400 image.jpg" style="width: 800px;" alt="Main Project Image">
-                </div>            </div>
+                </div>           
+
+                <div class="project-details-button">
+                <button type="button" class="collapsible">
+                    <h3 class="button-title">Approach</h3>
+                    <img src="/images/ExpandIcon.svg" class="expand-icon">
+                    <img src="/images/CollapseIcon.svg" class="collapse-icon">
+                
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
+                </div>
+            </div>
 
             <div class="project-details-image-section">
                 <div class="project-details-image">
                     <img src="images/600x400 image.jpg" style="width: 800px;" alt="Main Project Image">
+                </div>
+
+                <div class="project-details-button">
+                <button type="button" class="collapsible">
+                    <h3 class="button-title">Outcome</h3>
+                    <img src="/images/ExpandIcon.svg" class="expand-icon">
+                    <img src="/images/CollapseIcon.svg" class="collapse-icon">
+                
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="project-details-image-section">
+                <div class="project-details-image">
+                    <img src="images/600x400 image.jpg" style="width: 800px;" alt="Main Project Image">
+                </div>
+
+                <div class="project-details-button">
+                <button type="button" class="collapsible">
+                    <h3 class="button-title">Next Steps</h3>
+                    <img src="/images/ExpandIcon.svg" class="expand-icon">
+                    <img src="/images/CollapseIcon.svg" class="collapse-icon">
+                
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum...</p>
+                </div>
                 </div>
             </div>
     </div>
@@ -138,9 +188,11 @@
     <div class="project-summary-column">        
         <div class="project-summary-sticky">
             <div class="project-summary-header">
-                <div class="project-summary-heading">
-                <a href="interval_training_timer_app.html" class="project-card-summary-title"><h3>Bebop Workshop</Title></h3></a>
+                <a href="interval_training_timer_app.html" class="project-card-summary-title"><h2>Bebop Workshop</Title></h2></a>
 
+                <div class="project-summary-info">
+
+                <div>
                 <div class="project-card-summary-links">
                     <p class="project-card-summary-link"><a href="https://www.bebopworkshop.com/"><u>Visit Website</u></a></p>
                     <p class="project-card-summary-link"><a href="https://github.com/henry-boyd/Bebop-Workshop-Website"><u>Github Repo</u></a></p>
@@ -153,42 +205,27 @@
                 </div>
 
                 <div class="project-card-tags-section">
-                        <div class="project-icons-square">
-                            <img src="images/skills_and_services_icons/html5.svg" style="height: 36px; width: 36px;">
-                            <img src="images/CSSlogo.png" style="height: 36px; width: 36px;">
-                            <img src="images/skills_and_services_icons/javascript.svg" style="height: 36px; width: 36px;">
-                            <img src="images/Astro Icon Light Gradient.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
-                            <img src="images/skills_and_services_icons/SVG_Logo.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
-                            <img src="images/skills_and_services_icons/figma.svg" style="height: 36px; width: 36px;">
-                        </div>
+                    <div class="project-icons-square">
+                        <img src="images/skills_and_services_icons/html5.svg" style="height: 36px; width: 36px;">
+                        <img src="images/CSSlogo.png" style="height: 36px; width: 36px;">
+                        <img src="images/skills_and_services_icons/javascript.svg" style="height: 36px; width: 36px;">
+                        <img src="images/Astro Icon Light Gradient.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
+                        <img src="images/skills_and_services_icons/SVG_Logo.svg" style="height: 36px; width: 36px; background-color: black; border-radius: 5px;">
+                        <img src="images/skills_and_services_icons/figma.svg" style="height: 36px; width: 36px;">
+                    </div>
                 </div>
+                
+                </div>
+
             </div>
-            <div class="project-details">
-                <button type="button" class="collapsible">Goals</button>
-                <div class="content">
-                    <p>Lorem ipsum...</p>
-                </div>
 
-                <button type="button" class="collapsible">Constraints</button>
-                <div class="content">
-                    <p>Lorem ipsum...</p>
-                </div>
-
-                <button type="button" class="collapsible">Approach</button>
-                <div class="content">
-                    <p>Lorem ipsum...</p>
-                </div>
-
-                <button type="button" class="collapsible">Outcome</button>
-                <div class="content">
-                    <p>Lorem ipsum...</p>
-                </div>
-
-                <button type="button" class="collapsible">Next Steps</button>
-                <div class="content">
-                    <p>Lorem ipsum...</p>
-                </div>
-            </div>
+            <ul class="project-summary-sections">
+                <li><h4>Goals</h4></li>
+                <li><h4>Constraints</h4></li>
+                <li><h4>Approach</h4></li>
+                <li><h4>Outcome</h4></li>
+                <li><h4>Next Steps</h4></li>
+            </ul>
         </div>
     </div>
     </main>
@@ -258,6 +295,10 @@
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
+        var expandIcon = document.getElementsByClassName("expand-icon");
+        var expandIconArray = Array.from(expandIcon);
+        var collapseIcon = document.getElementsByClassName("collapse-icon");
+        var collapseIconArray = Array.from(collapseIcon);
         var i;
         
         for (i = 0; i < coll.length; i++) {
@@ -266,11 +307,15 @@
             var content = this.nextElementSibling;
             if (content.style.maxHeight){
               content.style.maxHeight = null;
+              expandIconArray[i].style.display = "none";
+              collapseIconArray[i].style.display = "block";
             } else {
               content.style.maxHeight = content.scrollHeight + "px";
+              expandIconArray[i].style.display = "block";
+              collapseIconArray[i].style.display = "none";
             } 
           });
         }
-        </script>
+    </script>
 </body>
 </html>
