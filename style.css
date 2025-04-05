@@ -506,10 +506,19 @@ body {
     order: -1;
   }
 
+  .project-card-summary-title {
+    text-align: center;
+  }
+
   .project-card-summary-desc {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .project-card-summary-links {
+    display: flex;
+    justify-content: center;
   }
 
   .project-card-summary-icons {
