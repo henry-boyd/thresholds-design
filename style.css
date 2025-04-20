@@ -274,7 +274,7 @@ body {
   grid-gap: 1.25rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1rem;
+  padding-top: 8rem;
 }
 
 .card-image-shadow {
@@ -495,10 +495,11 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
   .project-card {
     display: grid;
+    overflow: hidden;
   }
 
   .project-card-image-flip {
@@ -576,7 +577,7 @@ body {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .project-card-summary {
     max-width: 350px;
   }
@@ -659,7 +660,6 @@ body {
   }
 
   .card-image-shadow {
-    position: relative;
     opacity: 100%;
   }
 
